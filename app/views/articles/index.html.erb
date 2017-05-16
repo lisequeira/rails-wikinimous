@@ -1,0 +1,7 @@
+<h1>All the tasks</h1>
+
+<% @articles.each do |article|%>
+  <p><%= link_to article.title, article_path(article)%></p>
+<% end %>
+
+<p><%= link_to "Create new articles", new_article_path%></p>
